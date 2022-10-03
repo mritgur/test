@@ -43,9 +43,10 @@ const nmi = document.querySelectorAll('.nav__menu_item'),
           search.classList.add('search_active');
         } );
        
-        window.onclick = function(event) {
-          if (event.target == search) {
+   
+        window.addEventListener('click', (e)=>{
+          if (e.target == search) {
             search.classList.remove('search_active');
-          }
-      };
+          }});
+
     });
